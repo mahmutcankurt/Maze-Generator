@@ -13,6 +13,8 @@ The depth-first search algorithm of maze generation is frequently implemented us
   + Invoke the routine recursively for a chosen cell
 which is invoked once for any initial cell in the area.
 
+![](maze-generator.gif)
+
 A disadvantage of this approach is a large depth of recursion – in the worst case, the routine may need to recur on every cell of the area being processed, which may exceed the maximum recursion stack depth in many environments. As a solution, the same bactracking method can be implemented with an explicit stack, which is usually allowed to grow much bigger with no harm.
 
 + Choose the initial cell, mark it as visited and push it to the stack
